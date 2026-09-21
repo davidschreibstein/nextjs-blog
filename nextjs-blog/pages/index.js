@@ -5,7 +5,7 @@ import Head from 'next/head'; // Edits the document <head> (tab title, meta, etc
 import Layout, { siteTitle } from '../components/layout'; // Shared layout + exported site title string
 import utilStyles from '../styles/utils.module.css'; // Reusable CSS module class names
 
-// Reads /posts/*.md, parses front matter, returns posts sorted by date
+// Reads data/posts.json and returns posts sorted by title (with tags)
 import { getSortedPostsData } from '../lib/posts-json';
 
 // Static Generation: runs once at build time on the server (not in the browser).
@@ -47,6 +47,7 @@ export default function Home({ allPostsData }) {
                 {/* dateString is the markdown front-matter date, e.g. '2020-01-01' */}
                 <Date dateString={date} />
               </small>
+              {/* Optional tags from JSON, shown as a comma-separated list */}
               {tags?.length > 0 && (
                 <div className={utilStyles.lightText}>
                   {tags.join(', ')}
