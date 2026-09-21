@@ -1,0 +1,11 @@
+/* Alert message styles (for success / error states) */
+
+/* Green text for successful messages */
+.success {
+  color: green;
+}
+
+/* Red text for error messages */
+.error {
+  color: red;
+}

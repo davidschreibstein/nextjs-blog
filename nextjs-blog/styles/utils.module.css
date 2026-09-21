@@ -1,0 +1,64 @@
+/* Reusable utility classes — import where needed as utilStyles */
+
+/* Extra-large heading (homepage name) */
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+/* Large heading */
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+/* Medium-large heading (used for name on non-home pages) */
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+/* Medium heading / body intro text */
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+/* Makes images circular (profile photo) */
+.borderCircle {
+  border-radius: 9999px;
+}
+
+/* Links inherit the parent text color instead of the default blue */
+.colorInherit {
+  color: inherit;
+}
+
+/* Tiny top padding helper */
+.padding1px {
+  padding-top: 1px;
+}
+
+/* Reset default list styling */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Spacing between list items */
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+/* Muted secondary text color */
+.lightText {
+  color: #666;
+}

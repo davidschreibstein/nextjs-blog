@@ -1,0 +1,64 @@
+/* Global styles — apply to the whole site (imported in pages/_app.js) */
+
+/* Base page styles */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: beige; /* Page background color */
+}
+
+/* Include padding/border inside element width calculations */
+* {
+  box-sizing: border-box;
+}
+
+/* Default link appearance */
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+/* Underline links on hover */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Keep images responsive and block-level */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Main heading styles (e.g. the name on the homepage) */
+h1 {
+  color: red;
+  text-shadow: 2px 2px 4px rgba(109, 28, 28, 0.2); /* Soft drop shadow */
+}
+
+/* Darker heading + stronger shadow when hovered */
+h1:hover {
+  color: rgb(193, 28, 28);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Paragraph text styles */
+p, li {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+

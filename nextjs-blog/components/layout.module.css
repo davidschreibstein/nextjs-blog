@@ -1,0 +1,20 @@
+/* CSS Module styles for the Layout component */
+
+/* Centers page content and limits its width */
+.container {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 3rem auto 6rem; /* auto left/right centers the block */
+}
+
+/* Stacks header items vertically and centers them */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Space above the "Back to home" link */
+.backToHome {
+  margin: 3rem 0 0;
+}
