@@ -6,7 +6,7 @@ import Layout, { siteTitle } from '../components/layout'; // Shared layout + exp
 import utilStyles from '../styles/utils.module.css'; // Reusable CSS module class names
 
 // Reads /posts/*.md, parses front matter, returns posts sorted by date
-import { getSortedPostsData } from '../lib/posts';
+import { getSortedPostsData } from '../lib/posts-json';
 
 // Static Generation: runs once at build time on the server (not in the browser).
 // Whatever you return in props is passed into the page component below.
@@ -36,7 +36,7 @@ export default function Home({ allPostsData }) {
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {/* .map() builds one <li> per post; destructure only the fields we need */}
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title, tags }) => (
             // key helps React track each list item; use a stable unique value (id)
             <li className={utilStyles.listItem} key={id}>
               {/* Dynamic route: /posts/ssg-ssr, /posts/lakers, etc. */}
@@ -47,6 +47,11 @@ export default function Home({ allPostsData }) {
                 {/* dateString is the markdown front-matter date, e.g. '2020-01-01' */}
                 <Date dateString={date} />
               </small>
+              {tags?.length > 0 && (
+                <div className={utilStyles.lightText}>
+                  {tags.join(', ')}
+                </div>
+              )}
             </li>
           ))}
         </ul>

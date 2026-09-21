@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Indianapolis Colts",
+    "date": "2026-09-14",
+    "contentHtml": "<p>The Indianapolis Colts are my favorite football team. They've won two superbowls, one in 1971 and one in 2007. They have been a fairly successful franchise for most of my life however they have struggled for the last 8 years or so, ever since their quarterback Andrew Luck retired. Some All-Time great Colts players are:</p><ul><li>Peyton Manning</li><li>Andrew Luck</li><li>Edgerrin James</li><li>Marvin Harrison</li><li>Johnny Unitas</li><li>Reggie Wayne</li></ul>",
+    "id": 1,
+    "tags": ["football", "NFL"]
+  },
+  {
+    "title": "San Francisco Giants",
+    "date": "2026-09-14",
+    "contentHtml": "<p>The San Francisco Giants are my favorite baseball team. They have been around for well over 100 years, originally playing in New York and moving to San Francisco in the 1950s. They have won 8 total world serieses, including 3 in 5 years from 2010 to 2014. Some all-time great Giants players include:</p><ul><li>Barry Bonds</li><li>Willy Mays</li><li>Tim Lincecum</li><li>Madison Bumgarner</li><li>Buster Posey</li><li>Willy McCovey</li></ul>",
+    "id": 2,
+    "tags": ["baseball", "MLB"]
+  },
+  {
+    "title": "Los Angeles Lakers",
+    "date": "2026-09-14",
+    "contentHtml": "<p>The LA Lakers are my favorite basketball team. They are a very successful franchise having won 17 championships between their time in Minneapolis and Los Angeles. Some of their best all time players include:</p><ul><li>Kobe Bryant</li><li>Magic Johnson</li><li>Shaquille O'Neal</li><li>Kareem Abdul-Jabar</li><li>Jerry West</li><li>LeBron James</li></ul>",
+    "id": 3,
+    "tags": ["basketball", "NBA"]
+  },
+  {
+    "title": "Two Forms of Pre-rendering",
+    "date": "2022-01-01",
+    "contentHtml": "<p>Next.js has two forms of pre-rendering: <strong>Static Generation</strong> and <strong>Server-side Rendering</strong>. The difference is in <strong>when</strong> it generates the HTML for a page.</p>",
+    "id": 4,
+    "tags": ["pre-rendering"]
+  },
+  {
+    "title": "When to Use Static Generation v.s. Server-side Rendering",
+    "date": "2022-01-02",
+    "contentHtml": "<p>We recommend using <strong>Static Generation</strong> (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.</p>",
+    "id": 5,
+    "tags": ["static generation", "server-side rendering"]
+  }
+]
